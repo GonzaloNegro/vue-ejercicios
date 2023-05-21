@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contador Vue</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>{{titulo}}</h1>
+            <img :src="url" v-bind:alt="alt" class="imgV">
+        </header>
+        <main>
+            <div class="contenedor">
+                <div class="valor">
+                    <p>{{numero}}</p>
+                </div>
+                <div class="btn">
+                    <button v-on:click="restando" value="Click" class="menos"><i class="fa-solid fa-minus fa-2x"></i></button>
+                    <button v-on:click="sumando" value="Click" class="mas"><i class="fa-solid fa-plus fa-2x"></i></button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://kit.fontawesome.com/ebb188da7c.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
