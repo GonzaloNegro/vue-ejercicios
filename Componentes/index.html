@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="espatula.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>Componentes Vue</title>
 </head>
 <body>
+
     <div id="app">
-        <header-component :titulo="'Burgers'"></header-component>
+        <header-component :titulo="'¡Full Burgers!'"></header-component>
         <main-cards :burgers="burgers"></main-cards>
+        <footer-component :subtitulo="'¡Full Burgers!'"></footer-component>
+        <cart-component></cart-component>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ebb188da7c.js" crossorigin="anonymous"></script>
